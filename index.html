@@ -5,16 +5,16 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Your Book Collection</h1>
+    <h2>Your Book Collection</h2>
     <p> you may add books to your collection at any time.</p>
-    <button commandfor="addbook" command="show-modal"> Add Book</button>
-    <dialog id="addbook">
+    <button popovertarget="addbook"> Add Book</button>
+    <dialog id="addbook" popover style="width: 300px;height: 200px; background-color:lightblue; border-radius:10px; padding:20px;">
         <input type="text" placeholder="book"  id="book"/>
         <input type="text" placeholder="author"  id="author"/>
         <input type="number" placeholder="pages in number"  id="pages"/>
         <input type="checkbox"  id="readcheck"/>
         <label for="readcheck">Read</label>
-        <button commandfor="addbook" command="close" onClick="handlesubmit()">Submit</button>
+        <button popovertargetaction="addbook" popovertarget="addbook" onClick="handlesubmit()">Submit</button>
     </dialog>
     <div id="booklist"></div>
 
