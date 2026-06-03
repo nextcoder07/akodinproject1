@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>My Web Page</title>   
+   
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Your Book Collection</h1>
+    <button commandfor="addbook" command="show-modal"> Add Book</button>
+    <dialog id="addbook">
+        <input type="text" placeholder="book"  id="book"/>
+        <input type="text" placeholder="author"  id="author"/>
+        <input type="number" placeholder="pages in number"  id="pages"/>
+        <input type="checkbox"  id="readcheck"/>
+        <label for="readcheck">Read</label>
+        <button commandfor="addbook" command="close" onClick="handlesubmit()">Submit</button>
+    </dialog>
+    <div id="booklist"></div>
+
+</body>
+</html>
